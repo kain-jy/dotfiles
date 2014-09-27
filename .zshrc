@@ -31,13 +31,13 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^p" history-beginning-search-backward-end
 bindkey "^n" history-beginning-search-forward-end
 
-# alias
-alias ls="ls --color"
-alias ll="ls -al"
-
 # environment variables
 export LANG=en_US.UTF-8
 export EDITOR=vim
 export TERM=xterm-256color
-export tmux="tmux -2"
-export top="TERM=screen htop"
+
+# alias
+alias ls="ls --color"
+alias ll="ls -al"
+alias tmux="tmux -2"
+alias top="TERM=screen htop"
