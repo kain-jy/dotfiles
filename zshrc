@@ -41,3 +41,10 @@ alias ls="ls --color"
 alias ll="ls -al"
 alias tmux="tmux -2"
 alias top="TERM=screen htop"
+
+# load additional settings
+if [ -d $HOME/.zshrc.d ]; then
+  for file in $HOME/.zshrc.d/*.zsh; do
+    source $file
+  done
+fi
