@@ -14,7 +14,7 @@ setopt nobeep
 # prompt
 setopt transient_rprompt
 setopt prompt_subst
-PROMPT="%(!.#.$) "
+PROMPT="[%n@%m] %(!.#.$) "
 RPROMPT="[%~]"
 
 # history
