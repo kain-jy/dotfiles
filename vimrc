@@ -1,5 +1,7 @@
 " kain <me@kain-jy.com>
 
+set runtimepath+=~/.vim/
+
 " === general ===
 set autoindent
 set clipboard=unnamed,autoselect
@@ -68,7 +70,6 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 
 NeoBundle 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
-set paste
 let g:Powerline_symbols = 'fancy'
 let g:lightline = {
             \ 'colorscheme': 'wombat',
@@ -82,6 +83,8 @@ let g:lightline = {
             \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
             \ }
             \ }
+
+runtime! rc.d/*.vim
 
 call neobundle#end()
 
