@@ -1,3 +1,6 @@
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+let g:syntastic_python_pep8_args = "--ignore=E226,E501,E701,E126"
+
 NeoBundleLazy "davidhalter/jedi-vim", {
   \ "autoload": {
   \   "filetypes": ["python"]

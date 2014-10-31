@@ -69,6 +69,10 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 
+NeoBundle 'scrooloose/syntastic'
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=2
+
 NeoBundle 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
 let g:Powerline_symbols = 'fancy'
 let g:lightline = {
