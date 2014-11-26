@@ -68,6 +68,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'scrooloose/syntastic'
 
 NeoBundle 'scrooloose/syntastic'
 let g:syntastic_enable_signs=1
