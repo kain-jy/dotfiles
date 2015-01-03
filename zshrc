@@ -12,9 +12,14 @@ setopt nonomatch
 setopt nobeep
 
 # prompt
+autoload -U colors
+colors
 setopt transient_rprompt
 setopt prompt_subst
-PROMPT="[%n@%m] %(!.#.$) "
+export PROMPT_INFO="%n@%m"
+export PROMPT_MARK="%(!.#.$)"
+PROMPT="$PROMPT_INFO
+$PROMPT_MARK "
 RPROMPT="[%~]"
 
 # history
