@@ -16,8 +16,8 @@ autoload -U colors
 colors
 setopt transient_rprompt
 setopt prompt_subst
-export PROMPT_INFO="%n@%m"
-export PROMPT_MARK="%(!.#.$)"
+PROMPT_INFO="%{${fg_bold[yellow]}%}%n@%m%{$reset_color%}"
+PROMPT_MARK="%(!.#.$)"
 PROMPT="$PROMPT_INFO
 $PROMPT_MARK "
 RPROMPT="[%~]"

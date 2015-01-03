@@ -14,13 +14,13 @@ function _git_branch {
 
   st=`git status 2> /dev/null`
   if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
-    color=${fg[blue]}
+    color=${fg_bold[blue]}
   elif [[ -n `echo "$st" | grep "^nothing added"` ]]; then
-    color=${fg[yellow]}
+    color=${fg_bold[yellow]}
   elif [[ -n `echo "$st" | grep "^# Untracked"` ]]; then
     color=${fg_bold[red]}
   else
-    color=${fg[red]}
+    color=${fg_bold[red]}
   fi
 
   echo " on git:%{$color%}$name%{$reset_color%}"
