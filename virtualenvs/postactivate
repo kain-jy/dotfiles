@@ -1,0 +1,10 @@
+#!/bin/zsh
+# This hook is sourced after every virtualenv is activated.
+
+PS1="$_OLD_VIRTUAL_PS1"
+_OLD_PROMPT="$PROMPT"
+_OLD_PROMPT_INFO="$PROMPT_INFO"
+
+PROMPT_INFO="$PROMPT_INFO with venv:%{${fg_bold[green]}%}`basename $VIRTUAL_ENV`%{$reset_color%}"
+PROMPT="$PROMPT_INFO
+$PROMPT_MARK "

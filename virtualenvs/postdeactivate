@@ -1,0 +1,5 @@
+#!/bin/zsh
+# This hook is sourced after every virtualenv is deactivated.
+
+PROMPT="$_OLD_PROMPT"
+PROMPT_INFO="$_OLD_PROMPT_INFO"
