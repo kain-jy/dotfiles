@@ -89,7 +89,7 @@ let g:lightline = {
             \ }
             \ }
 
-runtime! rc.d/*.vim
+runtime! conf.d/*.vim
 
 call neobundle#end()
 
