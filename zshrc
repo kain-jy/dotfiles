@@ -48,8 +48,8 @@ alias tmux="tmux -2"
 alias top="TERM=screen htop"
 
 # load additional settings
-if [ -d $HOME/.zshrc.d ]; then
-  for file in $HOME/.zshrc.d/*.zsh; do
+for file in $HOME/.zsh.d/**/*.zsh; do
+  if [ -r "$file" ]; then
     source $file
-  done
-fi
+  fi
+done
