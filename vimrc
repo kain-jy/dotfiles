@@ -33,6 +33,7 @@ set foldlevel=1
 set foldnestmax=3
 
 " === appearance ===
+let &colorcolumn=join(range(120, 999), ",")
 set number
 set ruler
 set cursorline
@@ -44,6 +45,7 @@ set listchars=tab:»-
 set list
 set splitright
 set splitbelow
+hi ColorColumn ctermbg=235 guibg=#2c2d27
 hi CursorLine ctermbg=0 guibg=darkred guifg=white
 hi Pmenu ctermfg=254 ctermbg=232 guibg=#000000
 hi PmenuSel ctermfg=7 ctermbg=4 guibg=#555555 guifg=#ffffff
