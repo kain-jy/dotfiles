@@ -1,9 +1,11 @@
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_args = '--ignore=E501,E126'
+let g:syntastic_python_flake8_args = '--ignore=E501,E126,E127,E128'
+
+NeoBundle "Glench/Vim-Jinja2-Syntax"
 
 NeoBundleLazy "davidhalter/jedi-vim", {
   \ "autoload": {
-  \   "filetypes": ["python"]
+  \   "filetypes": ["python", "python3"]
   \ }}
 
 let s:hooks = neobundle#get_hooks("jedi-vim")
@@ -19,5 +21,5 @@ endfunction
 
 NeoBundleLazy "jmcantrell/vim-virtualenv", {
   \ "autoload": {
-  \   "filetypes": ["python"]
+  \   "filetypes": ["python", "python3"]
   \ }}
